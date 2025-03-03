@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NighaTech Global - Digital Marketing Agency</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.theme.min.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+// primary: '#006DE3',
+
+primary: '#97734D',
+
+// secondary: '#38ABF7'
+
+// secondary: '#E7BF81'
+// gold lite E7BF81
+
+secondary: '#E7BF81'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<style>
+body {
+font-family: 'Inter', sans-serif;
+min-height: 1024px;
+scroll-padding-top: 100px;
+}
+.nav-link {
+position: relative;
+transition: all 0.3s ease;
+}
+.nav-link:hover {
+    /* background-color: #006DE3;  blue color */
+/* background-color: #006DE3;  */
+
+/* background-color: #97734D; Gold Color */
+background-color: #97734D; 
+
+color: white !important;
+}
+.sticky-nav {
+transition: background-color 0.3s ease;
+}
+.hero-bg {
+/* background: linear-gradient(135deg, #006DE3 0%, #38ABF7 100%); gold color*/
+background: linear-gradient(135deg, #97734D 0%, #E7BF81 100%);
+}
+.service-card {
+transition: transform 0.3s ease;
+}
+.service-card:hover {
+transform: translateY(-10px);
+}
+.testimonial-card {
+transition: transform 0.3s ease;
+}
+.testimonial-card:hover {
+transform: scale(1.02);
+}
+</style>
+</head>
+<body class="overflow-x-hidden">
+<nav id="navbar" class="sticky-nav fixed w-full z-50 py-6 bg-white shadow-lg transition-all duration-300">
+<div class="container mx-auto px-8 flex items-center justify-between">
+    <a href="#home" class="font-['Pacifico'] text-3xl text-primary">
+        <!-- <img src="CodeAlfa_logo.png" alt="" width="100px"> -->
+        <img src="CodeAlfa_logo.png" alt="CodeAlfa" width="100px">
+    </a>
+<div class="hidden lg:flex items-center space-x-10">
+
+<!-- <a href="#work" class="nav-link text-gray-800 hover:text-primary px-4 py-2 !rounded-button">Work</a> -->
+<a href="#about" class="nav-link text-gray-800 hover:text-primary px-4 py-2 !rounded-button">About</a>
+<a href="#services" class="nav-link text-gray-800 hover:text-primary px-4 py-2 !rounded-button">Services</a>
+<a href="#work" class="nav-link text-gray-800 hover:text-primary px-4 py-2 !rounded-button">Portfolio</a>
+<!-- <a href="#process" class="nav-link text-gray-800 hover:text-primary px-4 py-2 !rounded-button">Process</a> -->
+<!-- <a href="#team" class="nav-link text-gray-800 hover:text-primary px-4 py-2 !rounded-button">Team</a>
+<a href="#blog" class="nav-link text-gray-800 hover:text-primary px-4 py-2 !rounded-button">Blog</a> -->
+<!-- <a href="#careers" class="nav-link text-gray-800 hover:text-primary px-4 py-2 !rounded-button">Careers</a> -->
+<a href="#contact" class="nav-link text-gray-800 hover:text-primary px-4 py-2 !rounded-button">Contact</a>
+<a href="tel:8297808410" class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all duration-300 whitespace-nowrap">Let's Talk</a>
+</div>
+<div class="lg:hidden">
+<button id="mobile-menu-button" class="text-gray-800">
+<i class="fas fa-bars text-2xl"></i>
+</button>
+<div id="mobile-menu" class="hidden fixed inset-0 bg-white z-50">
+<div class="container mx-auto px-8 py-6">
+<div class="flex justify-between items-center mb-8">
+<!-- <a href="#" class="font-['Pacifico'] text-3xl text-primary">CodeAlfa</a> -->
+<a href="#" class="font-['Pacifico'] text-3xl text-primary">
+    <!-- <img src="CodeAlfa_logo.png" alt=""  width="100px"> -->
+    <img src="CodeAlfa_logo.png" alt="CodeAlfa" width="100px">
+</a>
+
+<button id="mobile-menu-close" class="text-gray-800">
+<i class="fas fa-times text-2xl"></i>
+</button>
+</div>
+<div class="flex flex-col space-y-4">
+
+<!-- <a href="#work" class="nav-link text-gray-800 hover:text-primary px-4 py-2 !rounded-button">Work</a> -->
+<a href="#about" class="nav-link text-gray-800 hover:text-primary px-4 py-2 !rounded-button">About</a>
+<a href="#services" class="nav-link text-gray-800 hover:text-primary px-4 py-2 !rounded-button">Services</a>
+<a href="#work" class="nav-link text-gray-800 hover:text-primary px-4 py-2 !rounded-button">Portfolio</a>
+<!-- <a href="#process" class="nav-link text-gray-800 hover:text-primary px-4 py-2 !rounded-button">Process</a> -->
+<!-- <a href="#team" class="nav-link text-gray-800 hover:text-primary px-4 py-2 !rounded-button">Team</a>
+<a href="#blog" class="nav-link text-gray-800 hover:text-primary px-4 py-2 !rounded-button">Blog</a> -->
+<!-- <a href="#careers" class="nav-link text-gray-800 hover:text-primary px-4 py-2 !rounded-button">Careers</a> -->
+<a href="#contact" class="nav-link text-gray-800 hover:text-primary px-4 py-2 !rounded-button">Contact</a>
+<a  href="tel:8297808410"  class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all duration-300 whitespace-nowrap">Let's Talk</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<script>
+document.getElementById('mobile-menu-button').addEventListener('click', function() {
+document.getElementById('mobile-menu').classList.remove('hidden');
+document.body.style.overflow = 'hidden';
+});
+document.getElementById('mobile-menu-close').addEventListener('click', function() {
+document.getElementById('mobile-menu').classList.add('hidden');
+document.body.style.overflow = '';
+});
+document.querySelectorAll('#mobile-menu a').forEach(link => {
+link.addEventListener('click', function() {
+document.getElementById('mobile-menu').classList.add('hidden');
+document.body.style.overflow = '';
+});
+});
+</script>
+
+
+    <!-- <section id="home" class="hero-section min-h-screen flex items-center relative overflow-hidden" style="background-image: url('https://www.rws.com/media/images/scs-ai-new-img-hero-1920x1080b-03_tcm228-261952.webp?v=20250212120200')"> -->
+
+        <section id="home" class="hero-section min-h-screen flex items-center relative overflow-hidden" style="background-image: url('aianim.gif');background-repeat: no-repeat; background-size: cover;">
+
+    <div class="container mx-auto px-6 py-20">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<div class="text-white">
+<h1 class="text-4xl font-bold leading-tight mb-6">Transforming Businesses with Cutting-Edge Digital Marketing & Software Solutions</h1>
+<p class="text-xl mb-8">We help brands grow online and build powerful software solutions tailored to their needs.</p>
+<a href="tel:+918297808410" class="bg-secondary text-black px-8 py-3 !rounded-button font-semibold hover:bg-opacity-90 transition-all duration-300 whitespace-nowrap">Get a Free Consultation</a>
+
+</div>
+</div>
+</div>
+</section>
+
+<section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+    <h2 class="text-4xl font-bold mb-4">About Us</h2>
+    <p class="text-gray-600 mx-16 text-justify mx-auto">
+
+        At CodeAlfa, we specialize in transforming businesses through cutting-edge digital marketing strategies and custom software solutions. Our mission is simple: to help brands thrive in the digital world by driving growth, enhancing online visibility, and providing tailored software solutions that address unique business needs.
+        
+        We believe in the power of innovation and technology to elevate businesses to new heights. Whether it's through data-driven digital marketing campaigns, user-friendly web design, or robust software development, we craft solutions that not only meet the needs of today’s competitive marketplace but also position businesses for future success.
+        
+        Our team of skilled professionals is passionate about delivering measurable results, ensuring that every client we work with can reach their full potential online. We take pride in providing personalized services that are aligned with your goals, enabling you to connect with your audience, streamline operations, and achieve long-term growth.
+        
+        Let us help you build a strong digital presence and powerful software solutions designed to fuel your business success. Together, we can navigate the evolving digital landscape and unlock new opportunities for growth.</p>
+    </div>
+
+    <h4 class="ml-16 font-bold">Our Mission & Vision</h4>
+    <p class="ml-16 text-gray-600 ">
+        At CodeAlfa, our mission is to empower businesses to succeed in an ever-evolving digital world. We achieve this by delivering innovative digital marketing strategies and creating tailored software solutions that drive growth, enhance customer engagement, and optimize operations. Our goal is to help brands stay ahead of the curve by providing the tools and expertise needed to excel in the digital era.
+    </p> <br>
+    <h4 class="ml-16 font-bold">Why Choose Us? </h4>
+    <p class="ml-16 text-gray-600 ">
+        Our vision is to become the go-to partner for businesses seeking transformative digital solutions. We aim to build long-lasting relationships with our clients by providing exceptional, results-driven services that pave the way for sustained growth and success. We envision a future where every business, no matter the size, can leverage technology and digital marketing to unlock its full potential and thrive in the competitive digital landscape.
+    </p> <br>
+    <h4 class="ml-16 font-bold">Our Team </h4>
+    <p>
+
+    </p>
+ 
+    </div>
+    </section>
+
+
+<section id="services" class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold mb-4">Our Services</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">We offer comprehensive Software Development and digital marketing solutions tailored to your business needs</p>
+</div>
+<div class="grid lg:grid-cols-3 gap-8">
+<div class="service-card bg-white p-8 rounded-lg shadow-lg">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+<i class="fas fa-chart-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold mb-4">Digital Strategy</h3>
+<p class="text-gray-600 mb-6">Develop comprehensive digital strategies that align with your business objectives and drive sustainable growth.</p>
+<a href="#" class="text-primary font-semibold hover:underline">Learn More →</a>
+</div>
+<div class="service-card bg-white p-8 rounded-lg shadow-lg">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+<i class="fas fa-search text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold mb-4">SEO Optimization</h3>
+<p class="text-gray-600 mb-6">Improve your search engine rankings and drive organic traffic through data-driven SEO strategies.</p>
+<a href="#" class="text-primary font-semibold hover:underline">Learn More →</a>
+</div>
+<div class="service-card bg-white p-8 rounded-lg shadow-lg">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+<i class="fas fa-thumbs-up text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold mb-4">Social Media Marketing</h3>
+<p class="text-gray-600 mb-6">Build and engage your audience through strategic social media campaigns and content creation.</p>
+<a href="#" class="text-primary font-semibold hover:underline">Learn More →</a>
+</div>
+
+<div class="service-card bg-white p-8 rounded-lg shadow-lg">
+    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+    <i class="fas fa-arrow-pointer text-primary text-2xl"></i>
+    </div>
+    <h3 class="text-xl font-bold mb-4">PPC Advertising</h3>
+    <p class="text-gray-600 mb-6">Google Ads, Facebook Ads, LinkedIn Ads.</p>
+    <a href="#" class="text-primary font-semibold hover:underline">Learn More →</a>
+    </div>
+
+    <div class="service-card bg-white p-8 rounded-lg shadow-lg">
+        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+        <i class="fas fa-bullhorn text-primary text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-4">Content Marketing</h3>
+        <p class="text-gray-600 mb-6">Blogging, social media content, email campaigns.        </p>
+        <a href="#" class="text-primary font-semibold hover:underline">Learn More →</a>
+        </div>
+
+        <div class="service-card bg-white p-8 rounded-lg shadow-lg">
+            <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+            <i class="fas fa-ranking-star text-primary text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Branding & Design</h3>
+            <p class="text-gray-600 mb-6">Logos, brand identity, UI/UX.</p>
+            <a href="#" class="text-primary font-semibold hover:underline">Learn More →</a>
+            </div>
+
+            
+</div>
+<div class="text-center mb-16 mt-16">
+    <h2 class="text-4xl font-bold mb-4">Software Development Services</h2>
+
+    </div>
+    <div class="grid lg:grid-cols-3 gap-8 ">
+    <div class="service-card bg-white p-8 rounded-lg shadow-lg">
+        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+        <i class="fas fa-globe text-primary text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-4">Website Development</h3>
+        <p class="text-gray-600 mb-6">WordPress, Shopify, custom sites
+        </p>
+        <a href="#" class="text-primary font-semibold hover:underline">Learn More →</a>
+        </div>
+        <div class="service-card bg-white p-8 rounded-lg shadow-lg">
+        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+        <i class="fas fa-mobile text-primary text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-4">Mobile App Development</h3>
+        <p class="text-gray-600 mb-6">iOS, Android, hybrid apps</p>
+        <a href="#" class="text-primary font-semibold hover:underline">Learn More →</a>
+        </div>
+        
+        <div class="service-card bg-white p-8 rounded-lg shadow-lg">
+            <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+            <i class="fas fa-arrow-pointer text-primary text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Custom Software Solutions</h3>
+            <p class="text-gray-600 mb-6">ERP, CRM, AI tools</p>
+            <a href="#" class="text-primary font-semibold hover:underline">Learn More →</a>
+            </div>
+        
+            <div class="service-card bg-white p-8 rounded-lg shadow-lg">
+                <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                <i class="fas fa-cloud-arrow-up text-primary text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Cloud & Cybersecurity </h3>
+                <p class="text-gray-600 mb-6">Secure hosting, cloud computing
+                </p>
+                <a href="#" class="text-primary font-semibold hover:underline">Learn More →</a>
+                </div>
+        
+                <div class="service-card bg-white p-8 rounded-lg shadow-lg">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                    <i class="fas fa-ranking-star text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">AI & Machine Learning </h3>
+                    <p class="text-gray-600 mb-6">Chatbots, automation, recommendation engines
+                    </p>
+                    <a href="#" class="text-primary font-semibold hover:underline">Learn More →</a>
+                    </div>
+
+                    <div class="service-card bg-white p-8 rounded-lg shadow-lg">
+                        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-bolt text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">IOT Internet Of Things </h3>
+                        <p class="text-gray-600 mb-6">Innovative Electronic Solutions, customized PCB</p>
+                        <a href="#" class="text-primary font-semibold hover:underline">Learn More →</a>
+                        </div>
+    </div>
+
+
+</div>
+</section>
+<section id="work" class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold mb-4">Our Work</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Explore our portfolio of successful digital marketing campaigns</p>
+</div>
+<div class="grid lg:grid-cols-3 gap-8">
+<div class="relative group overflow-hidden rounded-lg">
+<img src="Strategies-for-eCommerce-Growth--1-.jpg" alt="Project 1" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+<div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<div class="text-center text-white p-6">
+<h3 class="text-xl font-bold mb-2">E-commerce Growth Strategy</h3>
+<p class="mb-4">Increased online sales by 150% through targeted digital marketing</p>
+<button class="bg-white text-primary px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all duration-300 whitespace-nowrap">View Case Study</button>
+</div>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-lg">
+<img src="Social_Media_Marketing_EWM_SA_Digital_Agency_Geneva.jpg" alt="Project 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+<div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<div class="text-center text-white p-6">
+<h3 class="text-xl font-bold mb-2">Social Media Campaign</h3>
+<p class="mb-4">Generated 2M+ impressions for brand awareness campaign</p>
+<button class="bg-white text-primary px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all duration-300 whitespace-nowrap">View Case Study</button>
+</div>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-lg">
+<img src="search-engine-optimization.jpg" alt="Project 3" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+<div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<div class="text-center text-white p-6">
+<h3 class="text-xl font-bold mb-2">SEO Optimization</h3>
+<p class="mb-4">Achieved 200% increase in organic traffic within 6 months</p>
+<button class="bg-white text-primary px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all duration-300 whitespace-nowrap">View Case Study</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="testimonials" class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold mb-4">Client Testimonials</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">What our clients say about working with us</p>
+</div>
+<div class="glide">
+<div class="glide__track" data-glide-el="track">
+<ul class="glide__slides">
+<li class="glide__slide">
+<div class="testimonial-card bg-white p-8 rounded-lg shadow-lg mx-4">
+<div class="flex items-center mb-6">
+<img src="https://www.shutterstock.com/image-photo/portrait-young-investor-banker-workplace-260nw-2364566447.jpg" alt="Client" class="w-16 h-16 rounded-full object-cover mr-4">
+<div>
+<h4 class="font-bold">Samba Siva Rao</h4>
+<p class="text-gray-600">CEO, TechVision Inc.</p>
+</div>
+</div>
+<p class="text-gray-700">"CodeAlfa transformed our digital presence completely. Their strategic approach and attention to detail helped us achieve remarkable growth in our online market share."</p>
+</div>
+</li>
+<li class="glide__slide">
+<div class="testimonial-card bg-white p-8 rounded-lg shadow-lg mx-4">
+<div class="flex items-center mb-6">
+<img src="https://media.istockphoto.com/id/1145045107/photo/portrait-of-a-beautiful-mature-indian-woman.jpg?s=612x612&w=0&k=20&c=ezBRqDoUXJmSx2uoVUm0kw6Dj0N4CxtS49CoGs2TeKw=" alt="Client" class="w-16 h-16 rounded-full object-cover mr-4">
+<div>
+<h4 class="font-bold">Sara Jain</h4>
+<p class="text-gray-600">Marketing Director, GlobalTech</p>
+</div>
+</div>
+<p class="text-gray-700">"Working with CodeAlfa has been a game-changer for our business. Their innovative strategies and dedicated team delivered exceptional results beyond our expectations."</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="glide__bullets" data-glide-el="controls[nav]">
+<button class="glide__bullet" data-glide-dir="=0"></button>
+<button class="glide__bullet" data-glide-dir="=1"></button>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="grid lg:grid-cols-2 gap-12">
+<div>
+<h2 class="text-4xl font-bold mb-6">Let's Create Something Amazing Together</h2>
+<p class="text-gray-600 mb-8">Ready to transform your digital presence? Get in touch with us today.</p>
+<div class="space-y-4">
+<div class="flex items-center">
+<i class="fas fa-map-marker-alt text-primary w-8"></i>
+<span>Banglore</span>
+</div>
+<div class="flex items-center">
+<i class="fas fa-phone text-primary w-8"></i>
+<span>8297808410</span>
+</div>
+<div class="flex items-center">
+<i class="fas fa-envelope text-primary w-8"></i>
+<span>contact@codealfa.com</span>
+</div>
+</div>
+</div>
+<div>
+<form class="space-y-6">
+<div>
+<input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none">
+</div>
+<div>
+<input type="email" placeholder="Your Email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none">
+</div>
+<div>
+<textarea rows="4" placeholder="Your Message" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none"></textarea>
+</div>
+<button type="submit" class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-opacity-90 transition-all duration-300 whitespace-nowrap w-full">Send Message</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-gray-900 text-white py-12">
+<div class="container mx-auto px-6">
+<div class="grid lg:grid-cols-4 gap-8 mb-8">
+<div>
+<a href="#" class="font-['Pacifico'] text-2xl text-white mb-4 block">
+    <img src="CodeAlfa_logo.png" alt="CodeAlfa">
+</a>
+<p class="text-gray-400">We help brands grow online and build powerful software solutions tailored to their needs.</p>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+<ul class="space-y-2">
+<li><a href="#services" class="text-gray-400 hover:text-white">Services</a></li>
+<li><a href="#work" class="text-gray-400 hover:text-white">Work</a></li>
+<li><a href="#about" class="text-gray-400 hover:text-white">About</a></li>
+<li><a href="#contact" class="text-gray-400 hover:text-white">contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Services</h4>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-white">Digital Strategy</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">SEO Optimization</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">Social Media Marketing</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">Content Marketing</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary/30 transition-colors">
+<i class="fab fa-facebook-f"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary/30 transition-colors">
+<i class="fab fa-twitter"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary/30 transition-colors">
+<i class="fab fa-linkedin-in"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary/30 transition-colors">
+<i class="fab fa-instagram"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-8 text-center">
+<p class="text-gray-400">© <script>
+    var CurrentYear = new Date().getFullYear()
+    document.write(CurrentYear)
+</script> CodeAlfa. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.min.js"></script>
+<script>
+new Glide('.glide', {
+type: 'carousel',
+startAt: 0,
+perView: 2,
+gap: 30,
+breakpoints: {
+768: {
+perView: 1
+}
+}
+}).mount();
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function (e) {
+e.preventDefault();
+document.querySelector(this.getAttribute('href')).scrollIntoView({
+behavior: 'smooth'
+});
+});
+});
+window.addEventListener('scroll', function() {
+const navbar = document.getElementById('navbar');
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.nav-link');
+sections.forEach(section => {
+const sectionTop = section.offsetTop;
+const sectionHeight = section.clientHeight;
+if(window.scrollY >= (sectionTop - 150) && window.scrollY < (sectionTop + sectionHeight - 150)) {
+const id = section.getAttribute('id');
+navLinks.forEach(link => {
+link.classList.remove('bg-primary', 'text-white');
+if(link.getAttribute('href') === `#${id}`) {
+link.classList.add('bg-primary', 'text-white');
+}
+});
+}
+});
+});
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function (e) {
+e.preventDefault();
+const targetId = this.getAttribute('href');
+const targetSection = document.querySelector(targetId);
+const navHeight = document.getElementById('navbar').offsetHeight;
+const targetPosition = targetSection.offsetTop - navHeight;
+window.scrollTo({
+top: targetPosition,
+behavior: 'smooth'
+});
+document.querySelectorAll('.nav-link').forEach(link => {
+link.classList.remove('bg-primary', 'text-white');
+});
+this.classList.add('bg-primary', 'text-white');
+});
+});
+</script>
+</body>
+</html>
